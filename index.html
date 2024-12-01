@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="mesa.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas dinamicas</title>
+</head>
+<body>
+    <div class="contenido">
+        <h1>Tablas dinamicas</h1>
+        <h2>Cree y edite tabla en tiempo real</h2>
+        <div class="form">
+            <input type="number" name="" id="columnas" min="1" placeholder="columnas">
+            <input type="number" name="" id="filas" min="1" placeholder="filas">
+            <button onclick="Create_table() ">Crear</button>
+        </div>
+    </div>
+
+    <div class="colorCounters">
+        <h3>Contadores de colores:</h3>
+        <ul id="colorCounterList">
+            <li>Rojo: <span id="counter-rojo">0</span></li>
+            <li>Azul: <span id="counter-azul">0</span></li>
+            <li>Naranja: <span id="counter-naranja">0</span></li>
+            <li>Verde: <span id="counter-verde">0</span></li>
+            <li>Amarillo: <span id="counter-amarillo">0</span></li>
+            <li>Morado: <span id="counter-morado">0</span></li>
+            <li>Negro: <span id="counter-negro">0</span></li>
+        </ul>
+    </div>
+
+    <div class="containerTable">
+       <table>
+       </table>
+    </div>
+
+    <div class="container_btn_delete_table">
+        <button class="delete_btn" onclick="delete_table()">Eliminar</button>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
